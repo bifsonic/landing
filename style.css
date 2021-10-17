@@ -1,0 +1,70 @@
+body {
+  background-image: radial-gradient(circle at 0 1%, #3d3f65, #202135 92%);
+}
+
+body:before {
+  background-image: linear-gradient(to left, rgb(32 33 53), rgb(0 0 0 / 0%));
+  content: "";
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  left: -151%;
+  bottom: -24%;
+  transform: rotate(28deg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 186px;
+  padding-left: 82px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  font-size: 12px;
+  font-family: Montserrat;
+  color: #f6f6f6;
+}
+
+.menu li {
+  padding-right: 46px;
+}
+
+.menu li a:before {
+  width: 100%;
+  height: 3px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  border-radius: 10px;
+}
+
+.menu li a:hover:before {
+  background-color: #45afe3;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu li:last-child {
+  padding-right: 0;
+}
+
+.logo {
+  background-image: url("https://user-images.githubusercontent.com/14956407/137331645-9ae7f328-6a5f-4b77-be96-62de2a4fe8bb.png");
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu .active:before {
+  background-color: #45afe3;
+}
